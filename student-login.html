@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login - HireNow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Hire<span class="highlight">Now</span></span>
+        </div>
+    </header>
+
+    <main class="login-section">
+        <div class="login-container">
+            <img src="https://img.freepik.com/premium-vector/secure-login-concept-illustration_251005-445.jpg?w=740" alt="Login Illustration" class="login-img">
+            <div class="login-form">
+                <h1>Student Login</h1>
+                <form id="loginForm">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                    <a href="#" class="forgot-password">Forgot Password</a>
+
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Here you can add logic to validate user credentials.
+            // For simplicity, we'll assume login is successful.
+
+            // Redirect to the student dashboard
+            window.location.href = "student.html"; // Change this to the correct path of your student page
+        });
+    </script>
+</body>
+</html>
